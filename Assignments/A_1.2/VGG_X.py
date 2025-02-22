@@ -146,7 +146,7 @@ class VGG16(nn.Module):
             
             
 # Training function.
-def train(model, device, train_loader, optimizer, criterion, epoch, histor):
+def train(model, device, train_loader, optimizer, criterion, epoch, history):
     model.train()
     running_loss = 0.0
     correct = 0
@@ -176,7 +176,7 @@ def train(model, device, train_loader, optimizer, criterion, epoch, histor):
 
 
 # Validation function.
-def validate(model, device, val_loader, criterion, epoch, histor):
+def validate(model, device, val_loader, criterion, epoch, history):
     model.eval()
     running_loss = 0.0
     correct = 0
@@ -265,7 +265,7 @@ def plot_and_save(history, save_path="training_plot.png"):
     # plt.show()
 
     # Call this function after training
-    plot_and_save(history, save_path=f"{root}/training_plot.png")
+    plot_and_save(history, save_path=f"/work/nayeem/Neuromorphic/A_1.2/training_plot.png")
 
 
 
