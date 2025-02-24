@@ -26,7 +26,8 @@
 module load python3/anaconda/2023.1
 module load cuda/12.1
 
-source activate /work/nayeem/ENV/llms_3 
+# source activate /work/nayeem/ENV/llms_3 
+source activate /work/nayeem/ENV/pytorchGPU_env
 
 echo "date is: " date
 
